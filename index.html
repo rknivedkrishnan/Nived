@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nived Krishnan | Digital Architect</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/font/sans.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/font/mono.css">
+</head>
+
+<body>
+  <canvas id="bg-particles"></canvas>
+  <div id="frosted-layer"></div>
+  <div id="spotlight"></div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <nav class="container reveal">
+    <div class="logo">Nived<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#work" class="shift-link"><span data-text="Work">Work</span></a></li>
+      <li><a href="#about" class="shift-link"><span data-text="About">About</span></a></li>
+      <li><a href="#contact" class="shift-link"><span data-text="Contact">Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content-wrapper">
+        <div class="hero-content">
+          <div class="hero-header">
+            <span class="section-number">01</span>
+            <h2 class="reveal">2026 Portfolio</h2>
+          </div>
+          <h1 class="hero-title-wrapper">
+            <span class="hero-title-anim gradient-text" style="transition-delay: 0.1s;">R.K</span>
+            <span class="hero-title-anim gradient-text" style="transition-delay: 0.2s;">Nived</span><br>
+            <span class="hero-title-anim gradient-text" style="transition-delay: 0.3s;">Krishnan</span>
+          </h1>
+          <p class="reveal">Building scalable digital solutions through <span class="purple-text">Code</span> & <span
+              class="purple-text">Engineering</span>. At 13, I'm architecting the future of the web.</p>
+          <div class="hero-cta reveal">
+            <div class="magnetic-wrap">
+              <a href="#work" class="glow-btn">Explore Work</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-container reveal">
+          <div class="profile-frame">
+            <img src="https://github.com/rknivedkrishnan.png" alt="Nived Krishnan Profile">
+          </div>
+          <div class="experience-badge">13 Years Old</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bento Grid Section -->
+    <section id="about" class="section container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title reveal geist-mono">ABOUT ME<span>.</span></h2>
+      </div>
+      <div class="bento-grid">
+        <!-- About -->
+        <div class="bento-item bento-1 reveal">
+          <h3>Who Am I?</h3>
+          <p>A Full-Stack Developer & <b>Vibe Coder</b> based in India. I don't just write code; I find the rhythm in
+            logic. Java is my native language, and building high-performance systems is my flow state.</p>
+          <div class="tags-wrapper">
+            <div class="hobby-tag">💻 Full Stack Dev</div>
+            <div class="hobby-tag vibe-tag">✨ Vibe Coder</div>
+          </div>
+          <div class="expertise-badges">
+            <div class="expertise-badge java-badge">
+              <img src="./images/java.png" alt="Java">
+              <span>Java Expert</span>
+            </div>
+            <div class="expertise-badge ag-badge">
+              <img src="./images/antigravity.png" alt="Antigravity">
+              <span>Antigravity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="bento-item bento-2 reveal">
+          <div class="section-header">
+            <span class="section-number">03</span>
+            <h3>Stack</h3>
+          </div>
+          <div class="skills-tags skill-cloud">
+            <!-- Java (Signature) -->
+            <div class="tech-badge signature-badge">
+              <img src="./images/java.png" alt="Java">
+              <span>Java</span>
+            </div>
+            <!-- Python -->
+            <div class="tech-badge">
+              <img src="./images/Python-Emblem.png" alt="Python">
+              <span>Python</span>
+            </div>
+            <!-- JavaScript -->
+            <div class="tech-badge">
+              <img src="./images/java script.png" alt="JavaScript">
+              <span>JavaScript</span>
+            </div>
+            <!-- TypeScript -->
+            <!-- Keeping TS as SVG since user didn't provide icon, or maybe remove if unwanted. I'll keep default SVG for now or remove if strictly only provided icons wanted. 
+                 User said "remove ches and graphic design and make sur the already buttons like java and python make them look modern and add their icons as well"
+                 The user provided specific icons. I will remove strict typescript if not provided or just keep it. 
+                 Actually, user didn't provide TS icon. I'll leave TS as SVG for now.
+                 Wait, I should check if I missed any. Tech stack was: Java, Python, JS, TS, HTML/CSS.
+                 Files: css.png, html.png, java script.png, java.png, Python-Emblem.png.
+                 So I have HTML and CSS separate now. I should split HTML/CSS or use one?
+                 The old list had "HTML/CSS".
+                 I will add separate badges for HTML and CSS.
+            -->
+            <div class="tech-badge">
+              <svg viewBox="0 0 128 128">
+                <path fill="#007acc" d="M2.5 2.5h123v123h-123z" />
+                <path fill="#fff"
+                  d="M72.2 100.8c-7.3 0-11.5-3.3-13.4-9.3l15.1-3.6c.9 2.6 2.8 4.2 6.5 4.2 4.6 0 7.3-2.1 7.3-9.5V50.8h17.9v32c0 17.6-9.8 23-23.1 23-6.5 0-9.8-1.5-12.7-2.4l2.4-11.3zM25.3 29.2h44.4v14.4H53v56.2H35.1V43.6h-17V29.2z" />
+              </svg>
+              <span>TypeScript</span>
+            </div>
+            <!-- HTML5 -->
+            <div class="tech-badge">
+              <img src="./images/html.png" alt="HTML">
+              <span>HTML</span>
+            </div>
+            <!-- CSS -->
+            <div class="tech-badge">
+              <img src="./images/css.png" alt="CSS">
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Age/Status -->
+        <div class="bento-item bento-3 reveal">
+          <h3>Age</h3>
+          <div class="number">13</div>
+        </div>
+
+        <!-- Location -->
+        <div class="bento-item bento-4 reveal">
+          <h3>Based</h3>
+          <p>India</p>
+        </div>
+
+        <!-- Full Width Project/Banner -->
+        <div class="bento-item bento-5 reveal">
+          <div class="banner-content">
+            <h3>Next Move?</h3>
+            <p>Currently deep-diving into Advanced Algorithms and High-End Web UI. Checkmate is inevitable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="section container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title reveal">Visual Works<span>.</span></h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <span class="card-index">01</span>
+          <div class="card-glow"></div>
+          <div class="project-image">
+            <img src="/design.png" alt="AI Project">
+          </div>
+          <div class="project-info">
+            <h3>Neural Chess Engine</h3>
+            <p>Advanced AI algorithm written in Python.</p>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <span class="card-index">02</span>
+          <div class="card-glow"></div>
+          <div class="project-image">
+            <img src="/chess.png" alt="Web Dev">
+          </div>
+          <div class="project-info">
+            <h3>Cyber-Portfolio V3</h3>
+            <p>High-performance WebGL & TypeScript experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <div class="contact-branding reveal">
+        <h1 class="massive-text">NIVED KRISHNAN</h1>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-col">
+          <span class="col-label">EMAIL</span>
+          <a href="mailto:rknived.krishnan8695@gmail.com" class="col-value">rknived.krishnan8695@gmail.com</a>
+          <span class="col-label">LOCATION</span>
+          <span class="col-value">Kerala, India</span>
+        </div>
+        <div class="contact-col">
+          <span class="col-label">SOCIALS</span>
+          <ul class="social-list">
+            <li><a href="https://github.com/rknivedkrishnan" target="_blank" class="shift-link"><span
+                  data-text="GitHub ↗">GitHub ↗</span></a></li>
+            <li><a href="https://instagram.com/nived_krishna_rk" target="_blank" class="shift-link"><span
+                  data-text="Instagram ↗">Instagram ↗</span></a></li>
+            <li><a href="https://linkedin.com/in/rknivedkrishnan" target="_blank" class="shift-link"><span
+                  data-text="LinkedIn ↗">LinkedIn ↗</span></a></li>
+          </ul>
+        </div>
+        <div class="contact-col credits">
+          <span class="col-label">CREDITS</span>
+          <p>Designed & Developed by<br><b>Nived Krishnan</b></p>
+          <p class="copyright">&copy; 2026. All Rights Reserved.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      try {
+        console.log("DOM Loaded - Starting V3 Init");
+
+        // --- 1. Spotlight ---
+        const spotlight = document.getElementById('spotlight');
+        let mouseX = 0, mouseY = 0;
+
+        window.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+
+          // Update spotlight position immediately
+          if (spotlight) {
+            spotlight.style.left = `${mouseX}px`;
+            spotlight.style.top = `${mouseY}px`;
+          }
+        });
+
+        // --- Scroll to Top Button ---
+        const scrollTopBtn = document.getElementById('scroll-top');
+
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 500) {
+            scrollTopBtn.classList.add('visible');
+          } else {
+            scrollTopBtn.classList.remove('visible');
+          }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+          // Easing: slow start, fast middle, slow end
+          const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+          const start = window.scrollY;
+          const duration = 1000;
+          const startTime = performance.now();
+
+          const animate = (time) => {
+            const elapsed = time - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = easeInOutCubic(progress);
+
+            window.scrollTo(0, start * (1 - eased));
+
+            if (progress < 1) requestAnimationFrame(animate);
+          };
+
+          requestAnimationFrame(animate);
+        });
+
+        // --- 2. Magnetism (Glow Buttons & Nav)---
+        const magneticElements = document.querySelectorAll('.magnetic-wrap, .tech-badge');
+        magneticElements.forEach((wrap) => {
+          wrap.addEventListener('mousemove', (e) => {
+            const rect = wrap.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            const elem = wrap.querySelector('.glow-btn') || wrap;
+
+            if (elem) {
+              elem.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+              if (elem !== wrap) wrap.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+            }
+          });
+
+          wrap.addEventListener('mouseleave', () => {
+            const elem = wrap.querySelector('.glow-btn') || wrap;
+            if (elem) elem.style.transform = 'translate(0,0)';
+            if (elem !== wrap) wrap.style.transform = 'translate(0,0)';
+          });
+        });
+
+        // --- 3. Scroll Reveal ---
+        const reveals = document.querySelectorAll('.reveal, .hero-title-anim');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+            }
+          });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(el => observer.observe(el));
+
+        // FORCE HERO TITLE REVEAL (Failsafe)
+        setTimeout(() => {
+          document.querySelectorAll('.hero-title-anim').forEach(el => el.classList.add('active'));
+        }, 500); // 500ms delay to ensure load
+
+        // --- 4. Particles (High Visibility) ---
+        const canvas = document.getElementById('bg-particles');
+        if (canvas) {
+          const ctx = canvas.getContext('2d');
+
+          function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+          }
+          resize();
+          window.addEventListener('resize', resize);
+
+          const particles = [];
+          const logoImages = [
+            './images/java.png',
+            './images/Python-Emblem.png',
+            './images/java script.png',
+            './images/html.png',
+            './images/css.png'
+          ];
+
+          const loadedLogos = [];
+          logoImages.forEach(src => {
+            const img = new Image();
+            img.src = src;
+            loadedLogos.push(img);
+          });
+
+          // Standard Dots
+          for (let i = 0; i < 60; i++) {
+            particles.push({
+              type: 'dot',
+              x: Math.random() * canvas.width,
+              y: Math.random() * canvas.height,
+              size: Math.random() * 2 + 1.5,
+              vx: (Math.random() - 0.5) * 0.5,
+              vy: (Math.random() - 0.5) * 0.5
+            });
+          }
+
+          // Floating Logos
+          for (let i = 0; i < 15; i++) {
+            particles.push({
+              type: 'logo',
+              img: loadedLogos[i % loadedLogos.length],
+              x: Math.random() * canvas.width,
+              y: Math.random() * canvas.height,
+              size: 20, // Small logo size
+              vx: (Math.random() - 0.5) * 0.3, // Slower than dots
+              vy: (Math.random() - 0.5) * 0.3
+            });
+          }
+
+          function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach(p => {
+              p.x += p.vx;
+              p.y += p.vy;
+
+              if (p.x < 0) p.x = canvas.width;
+              if (p.x > canvas.width) p.x = 0;
+              if (p.y < 0) p.y = canvas.height;
+              if (p.y > canvas.height) p.y = 0;
+
+              if (p.type === 'dot') {
+                ctx.fillStyle = '#c77dff';
+                ctx.globalAlpha = 0.8;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+              } else if (p.type === 'logo' && p.img.complete) {
+                ctx.globalAlpha = 0.4; // Faint
+                // Monochromatic tint effect hack
+                // Draw image, preserve alpha
+                ctx.drawImage(p.img, p.x, p.y, p.size, p.size);
+              }
+            });
+            requestAnimationFrame(animate);
+          }
+          animate();
+          console.log("Particles Initialized");
+        }
+
+      } catch (err) {
+        console.error("V3 Error:", err);
+        // Panic visual
+        document.body.style.background = "red";
+      }
+    });
+  </script>
+</body>
+
+</html>
