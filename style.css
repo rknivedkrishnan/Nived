@@ -136,9 +136,10 @@ ul {
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.02);
+    /* Slight white tint for frost */
     pointer-events: none;
 }
 

@@ -392,11 +392,13 @@
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
                 ctx.fill();
-              } else if (p.type === 'logo' && p.img.complete) {
-                ctx.globalAlpha = 0.4; // Faint
-                // Monochromatic tint effect hack
-                // Draw image, preserve alpha
-                ctx.drawImage(p.img, p.x, p.y, p.size, p.size);
+              } else if (p.type === 'logo' && p.img && p.img.complete && p.img.naturalWidth > 0) {
+                try {
+                  ctx.globalAlpha = 0.4; // Faint
+                  ctx.drawImage(p.img, p.x, p.y, p.size, p.size);
+                } catch (e) {
+                  // Ignore drawing error
+                }
               }
             });
             requestAnimationFrame(animate);
