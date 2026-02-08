@@ -972,7 +972,74 @@ h3 {
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
+    }
+
+    .contact-branding {
+        margin-bottom: 3rem;
+    }
+
+    .massive-text {
+        font-size: clamp(2rem, 8vw, 4rem);
+        line-height: 1;
+    }
+
+    .col-value {
+        font-size: 1rem;
+        word-break: break-word;
+    }
+
+    .social-list a {
+        font-size: 1rem;
+    }
+
+    nav .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links li a {
+        font-size: 0.9rem;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-info {
+        padding: 2rem;
+    }
+
+    .card-index {
+        font-size: 3rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-1,
+    .bento-2,
+    .bento-3,
+    .bento-4,
+    .bento-5 {
+        grid-column: span 1;
     }
 }
 
@@ -996,24 +1063,6 @@ h3 {
 
     .bento-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .bento-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .bento-1,
-    .bento-2,
-    .bento-3,
-    .bento-4,
-    .bento-5 {
-        grid-column: span 1;
     }
 
     .hero-content h1 {
